@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/greyBackground"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/user_gradient"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="20dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_edit_black_24dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="@color/colorAccent"
+            android:textColor="#FFFFFF"
+            android:layout_margin="10dp"
+            android:id="@+id/logout"/>
+
+
+    </RelativeLayout>
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-75dp"
+        android:id="@+id/profileScreen"
+        android:layout_width="150dp"
+        android:layout_height="150dp" />
+    <TextView
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:id="@+id/name"
+        android:text="__USER__"
+        android:textColor="@color/colorAccent"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/numberPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Number"
+            android:layout_marginLeft="40dp"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/number"
+            android:padding="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:layout_below="@+id/numberPlace"
+            android:text="588555"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/bloodGroupPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:paddingRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="Blood Group"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bloodGroupPlace"
+            android:layout_alignParentRight="true"
+            android:padding="10dp"
+            android:layout_marginRight="40dp"
+            android:text="588555"
+            android:textSize="30sp"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:textSize="25sp"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/bg"
+            android:id="@+id/emerPlace"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name1"
+            android:text="Name 1"
+            android:textSize="25sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/emerPlace"
+            android:textColor="@color/colorAccent"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name2"
+            android:text="Name 2"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/name1"
+            android:textColor="@color/colorAccent"
+            />
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
